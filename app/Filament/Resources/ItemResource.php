@@ -51,10 +51,6 @@ class ItemResource extends Resource
                             }, [])
                     )
                     ->required()
-                    ->iconPosition(IconPosition::Before) // Before | After | (string - before | after)
-                    ->gap('gap-5') // Gap between Icon and Description (Any TailwindCSS gap-* utility)
-                    ->padding('px-4 px-6') // Padding around the deck (Any TailwindCSS padding utility)
-                    ->direction('column') // Column | Row (Allows to place the Icon on top)
                     ->columns(3)
                     ->required(),
             ]);
